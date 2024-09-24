@@ -1,20 +1,10 @@
 html {
   font-family: sans-serif;
-
-  @media (max-width: 789px) {
-    font-size: calc(
-      12px + (18 - 12) * ((100vw - 320px) / (1200 - 320))
-    );
-  }
 }
 
 .header__title {
   font-size: 5em;
   text-align: center;
-
-  @media (max-width: 789px) {
-    font-size: 4em;
-  }
 }
 
 .candidatos {
@@ -36,11 +26,6 @@ html {
   margin-bottom: 1em;
   padding: 0;
   user-select: none;
-
-  @media (max-width: 789px) {
-    flex-direction: column;
-    margin-bottom: 4em;
-  }
 }
 
 .candidato:last-child {
@@ -50,11 +35,6 @@ html {
 .candidato__image {
   height: 100%;
   max-width: 12em;
-
-  @media (max-width: 789px) {
-    display: block;
-    margin: 0 auto;
-  }
 }
 
 .candidato__count {
@@ -63,11 +43,6 @@ html {
   max-width: 2em;
   min-width: 2em;
   text-align: center;
-
-  @media (max-width: 789px) {
-    display: block;
-    margin: 0.1em auto;
-  }
 }
 
 .candidato__votes {
@@ -86,39 +61,58 @@ html {
   margin: 0.2em;
   padding: 0;
   width: 4.5em;
-
-  @media (max-width: 789px) {
-    height: 3em;
-    width: 3em;
-  }
 }
 
-[data-candidate="0"] {
-  .candidato__votes li {
-    background-color: #2c63c3;
-  }
+[data-candidate="0"] .candidato__votes li {
+  background-color: #2c63c3;
 }
 
 [data-candidate="0"]:active {
   outline: 2px dashed #2c63c3;
 }
 
-[data-candidate="1"] {
-  .candidato__votes li {
-    background-color: #e383ac;
-  }
+[data-candidate="1"] .candidato__votes li {
+  background-color: #e383ac;
 }
 
 [data-candidate="1"]:active {
   outline: 2px dashed #e383ac;
 }
 
-[data-candidate="2"] {
-  .candidato__votes li {
-    background-color: #d0cc51;
-  }
+[data-candidate="2"] .candidato__votes li {
+  background-color: #d0cc51;
 }
 
 [data-candidate="2"]:active {
   outline: 2px dashed #d0cc51;
+}
+
+@media (max-width: 789px) {
+  html {
+    font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1200 - 320)));
+  }
+
+  .header__title {
+    font-size: 4em;
+  }
+
+  .candidato {
+    flex-direction: column;
+    margin-bottom: 4em;
+  }
+
+  .candidato__image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .candidato__count {
+    display: block;
+    margin: 0.1em auto;
+  }
+
+  .candidato__votes li {
+    height: 3em;
+    width: 3em;
+  }
 }
