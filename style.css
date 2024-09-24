@@ -94,14 +94,26 @@ html {
   }
 }
 
+[data-candidate="0"]:active {
+  outline: 2px dashed #2c63c3;
+}
+
 [data-candidate="1"] {
   .candidato__votes li {
     background-color: #e383ac;
   }
 }
 
+[data-candidate="1"]:active {
+  outline: 2px dashed #e383ac;
+}
+
 [data-candidate="2"] {
   .candidato__votes li {
     background-color: #d0cc51;
   }
+}
+
+[data-candidate="2"]:active {
+  outline: 2px dashed #d0cc51;
 }
