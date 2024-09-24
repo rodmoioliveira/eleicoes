@@ -1,7 +1,7 @@
 html {
   font-family: sans-serif;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 789px) {
     font-size: calc(
       12px + (18 - 12) * ((100vw - 320px) / (1200 - 320))
     );
@@ -12,7 +12,7 @@ html {
   font-size: 5em;
   text-align: center;
 
-  @media (max-width: 480px) {
+  @media (max-width: 789px) {
     font-size: 4em;
   }
 }
@@ -37,7 +37,7 @@ html {
   padding: 0;
   user-select: none;
 
-  @media (max-width: 480px) {
+  @media (max-width: 789px) {
     flex-direction: column;
     margin-bottom: 4em;
   }
@@ -51,7 +51,7 @@ html {
   height: 100%;
   max-width: 12em;
 
-  @media (max-width: 480px) {
+  @media (max-width: 789px) {
     display: block;
     margin: 0 auto;
   }
@@ -64,7 +64,7 @@ html {
   min-width: 2em;
   text-align: center;
 
-  @media (max-width: 480px) {
+  @media (max-width: 789px) {
     display: block;
     margin: 0.1em auto;
   }
@@ -87,9 +87,9 @@ html {
   padding: 0;
   width: 4.5em;
 
-  @media (max-width: 480px) {
-    height: 2em;
-    width: 2em;
+  @media (max-width: 789px) {
+    height: 3em;
+    width: 3em;
   }
 }
 
