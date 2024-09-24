@@ -13,7 +13,7 @@ html {
   text-align: center;
 
   @media (max-width: 480px) {
-    font-size: 3em;
+    font-size: 4em;
   }
 }
 
@@ -49,7 +49,7 @@ html {
 
 .candidato__image {
   height: 100%;
-  max-width: 7em;
+  max-width: 12em;
 
   @media (max-width: 480px) {
     display: block;
@@ -58,8 +58,8 @@ html {
 }
 
 .candidato__count {
-  font-size: 2em;
-  margin: 0 1em;
+  font-size: 4em;
+  margin: 0;
   max-width: 2em;
   min-width: 2em;
   text-align: center;
@@ -81,11 +81,16 @@ html {
 }
 
 .candidato__votes li {
-  height: 1.5em;
+  height: 4.5em;
   list-style: none;
   margin: 0.2em;
   padding: 0;
-  width: 1.5em;
+  width: 4.5em;
+
+  @media (max-width: 480px) {
+    height: 2em;
+    width: 2em;
+  }
 }
 
 [data-candidate="0"] {
