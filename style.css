@@ -1,5 +1,6 @@
 html {
   font-family: sans-serif;
+  padding-bottom: 5em;
 }
 
 .header__title {
@@ -109,6 +110,10 @@ html {
   .candidato__count {
     display: block;
     margin: 0.1em auto;
+  }
+
+  .candidato__votes {
+    min-height: 3.5em;
   }
 
   .candidato__votes li {
