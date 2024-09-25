@@ -12,7 +12,7 @@ resize-192() {
   paste -d ' ' \
     <(find images/original -type f) \
     <(find images/original -type f | sed -e 's@images/original/@@g' | awk -F'.' '{print "images/192/"$1".webp"}') |
-    xargs -n2 -P10 convert -quality 50 -define webp:method=6 -resize 192x
+    xargs -n2 -P10 convert -quality 100 -define webp:method=6 -resize 192x
 }
 
 resize-assert() {
