@@ -41,7 +41,7 @@ figcaption {
   padding: 0;
   user-select: none;
   align-items: center;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .candidato:last-child {
@@ -107,30 +107,45 @@ figcaption {
 }
 
 @media (max-width: 789px) {
-  html {
-    font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1200 - 320)));
+  figure {
+    min-width: auto;
+  }
+
+  figcaption {
+    font-size: 4vw;
   }
 
   .header__title {
-    font-size: 3em;
+    font-size: 8vw;
+  }
+
+  .candidatos {
+    flex-direction: row;
   }
 
   .candidato {
     flex-direction: column;
-    margin-bottom: 4em;
+    margin-bottom: 0;
+  }
+
+  .candidato__image {
+    max-height: 30vw;
+    height: 30vw;
   }
 
   .candidato__count {
     display: block;
     margin: 0.1em auto;
+    font-size: 4vw;
   }
 
   .candidato__votes {
-    min-height: 3.5em;
+    justify-content: center;
   }
 
   .candidato__votes li {
-    height: 2em;
-    width: 2em;
+    height: 3vw;
+    width: 3vw;
+    margin: 0.5vw;
   }
 }
